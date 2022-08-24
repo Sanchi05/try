@@ -19,6 +19,7 @@ public class Try1 {
 
         System.out.println(date);
         System.out.println(date);
+        System.out.println(date);
 
 
     }
