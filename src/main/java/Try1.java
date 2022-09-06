@@ -1,28 +1,22 @@
-import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.core.JsonProcessingException;
 
-import javax.imageio.IIOImage;
-import javax.imageio.ImageIO;
-import javax.imageio.ImageWriteParam;
-import javax.imageio.ImageWriter;
-import javax.imageio.stream.ImageOutputStream;
-import java.awt.image.BufferedImage;
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.util.Date;
-import java.util.zip.Deflater;
+import java.util.*;
+import java.util.stream.Stream;
 
 public class Try1 {
 
-    public static void main(String args[]){
-        Date date = new Date();
-
-        System.out.println(date);
-        System.out.println(date);
-        System.out.println(date);
-
-
+    public static String newF(Hehe hehe){
+        hehe.setI(10);
+        return "hehe";
     }
+    public static void main(String args[]) throws JsonProcessingException {
+        Hehe hehe = new Hehe();
+        String newStr = newF(hehe);
+        System.out.println(newStr);
+        System.out.println(hehe.i);
+    }
+
+
 
 
 }
